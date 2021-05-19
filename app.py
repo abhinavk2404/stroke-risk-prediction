@@ -4,6 +4,7 @@ import os
 import  numpy as np
 import pickle
 
+
 app= Flask(__name__)
 
 @app.route("/")
@@ -45,4 +46,5 @@ def result():
         return render_template('stroke.html')
 
 if __name__=="__main__":
-    app.run(debug=True,port=7384)
+    app.run()
+
